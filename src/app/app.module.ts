@@ -17,11 +17,15 @@ import {CommonModule} from "@angular/common";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatCardModule} from "@angular/material/card";
 import {MatDialogModule} from "@angular/material/dialog";
-import {DefaultDialogComponent} from "./default-dialog/default-dialog.component";
+import {DefaultDialogComponent} from "./components/default-dialog/default-dialog.component";
+import {HomeComponent} from "./pages/home/home.component";
+import {RouterModule} from "@angular/router";
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     DefaultDialogComponent
   ],
   imports: [
@@ -41,6 +45,8 @@ import {DefaultDialogComponent} from "./default-dialog/default-dialog.component"
     ReactiveFormsModule,
     MatCardModule,
     MatDialogModule,
+    AppRoutingModule,
+    RouterModule,
   ],
   exports: [
     CommonModule,
